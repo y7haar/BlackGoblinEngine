@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E2447F1185A5E5F00C8EAF1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E2447F0185A5E5F00C8EAF1 /* main.cpp */; };
+		2E2447F9185A645600C8EAF1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E2447F8185A645600C8EAF1 /* main.c */; };
+		2E244801185A777F00C8EAF1 /* renderQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E244800185A777F00C8EAF1 /* renderQueue.c */; };
+		2E54F569185A80EB00902C76 /* renderNode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E54F568185A80EB00902C76 /* renderNode.c */; };
+		2E54F56B185A829100902C76 /* renderObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E54F56A185A829100902C76 /* renderObject.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +27,14 @@
 
 /* Begin PBXFileReference section */
 		2E2447ED185A5E5F00C8EAF1 /* BlackGoblinEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackGoblinEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E2447F0185A5E5F00C8EAF1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2E2447F8185A645600C8EAF1 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2E2447FA185A656C00C8EAF1 /* renderObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = renderObject.h; sourceTree = "<group>"; };
+		2E2447FB185A671600C8EAF1 /* renderFlags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = renderFlags.h; sourceTree = "<group>"; };
+		2E2447FE185A763B00C8EAF1 /* renderQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = renderQueue.h; sourceTree = "<group>"; };
+		2E2447FF185A768D00C8EAF1 /* renderNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = renderNode.h; sourceTree = "<group>"; };
+		2E244800185A777F00C8EAF1 /* renderQueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderQueue.c; sourceTree = "<group>"; };
+		2E54F568185A80EB00902C76 /* renderNode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderNode.c; sourceTree = "<group>"; };
+		2E54F56A185A829100902C76 /* renderObject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderObject.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +67,14 @@
 		2E2447EF185A5E5F00C8EAF1 /* BlackGoblinEngine */ = {
 			isa = PBXGroup;
 			children = (
-				2E2447F0185A5E5F00C8EAF1 /* main.cpp */,
+				2E2447F8185A645600C8EAF1 /* main.c */,
+				2E2447FE185A763B00C8EAF1 /* renderQueue.h */,
+				2E244800185A777F00C8EAF1 /* renderQueue.c */,
+				2E2447FF185A768D00C8EAF1 /* renderNode.h */,
+				2E54F568185A80EB00902C76 /* renderNode.c */,
+				2E2447FA185A656C00C8EAF1 /* renderObject.h */,
+				2E54F56A185A829100902C76 /* renderObject.c */,
+				2E2447FB185A671600C8EAF1 /* renderFlags.h */,
 			);
 			path = BlackGoblinEngine;
 			sourceTree = "<group>";
@@ -113,7 +130,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E2447F1185A5E5F00C8EAF1 /* main.cpp in Sources */,
+				2E54F569185A80EB00902C76 /* renderNode.c in Sources */,
+				2E2447F9185A645600C8EAF1 /* main.c in Sources */,
+				2E54F56B185A829100902C76 /* renderObject.c in Sources */,
+				2E244801185A777F00C8EAF1 /* renderQueue.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +275,7 @@
 				2E2447F6185A5E5F00C8EAF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
