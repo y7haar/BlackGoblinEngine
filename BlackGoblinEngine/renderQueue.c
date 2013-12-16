@@ -19,6 +19,14 @@ RenderQueue *createRenderQueue()
     return q;
 }
 
+void removeRenderQueue(RenderQueue *q)
+{
+    /*
+    free(q->start);
+    free(q);
+     */
+}
+
 void addToRenderQueue(RenderQueue *q, RenderObject *o)
 {
     RenderNode *n;
